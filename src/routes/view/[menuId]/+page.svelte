@@ -1,0 +1,57 @@
+<script>
+  import { onMount } from "svelte";
+  import MenuSpecialRow from '../../../lib/MenuSpecialRow.svelte'
+  import MenuFooter from '../../../lib/MenuFooter.svelte'
+  
+  /** @type {import('./$types').PageData} */
+	export let data;
+
+  let posts = [];
+  let loading = true;
+
+  onMount(async function () {
+    const endpoint = data?.url;
+    const response = await fetch(endpoint);
+    const res = await response.text();
+    
+		posts = (res.split('\r\n')).map(row => row.split('\t'));
+    loading = false;
+  });
+
+</script>
+
+<main>
+  <h1>{data.title}</h1>
+  <h3>{data.subtitle}</h3>
+  <img src={data.pic} alt="menu" />
+  <table>
+    {#if loading}
+      <p>Caricamento...</p>
+    {/if}
+    {#each posts as post}
+      <MenuSpecialRow {post} />
+    {/each}
+  </table>
+  <MenuFooter data={data.footer} />
+</main>
+
+<style>
+  main {
+    text-align: center;
+    background-image: url(img/leaves.webp);
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-position-x: -200px;
+    min-height: 600px;
+    background-size: contain;
+  }
+  img {
+    margin: 3rem auto;
+  }
+  table {
+    width: 90%;
+    margin: 3rem auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+  }
+</style>
