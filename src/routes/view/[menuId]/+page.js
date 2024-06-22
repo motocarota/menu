@@ -8,3 +8,14 @@ export function load({ params }) {
 		id: params.menuId,
 	};
 }
+
+/** @type {import('./$types').EntryGenerator} */
+export function entries() {
+	return [
+		{ menuId: 'bagni-giovanni' },
+		{ menuId: 'delfino-bianco-vini' },
+		{ menuId: 'delfino-bianco-special' },
+	];
+}
+
+export const prerender = true;
