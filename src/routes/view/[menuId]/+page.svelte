@@ -23,7 +23,7 @@
 <main style="background-color: {data.bgColor};">
   <h1>{data.title}</h1>
   <h3>{data.subtitle}</h3>
-  <img src="/img/{data.id}.webp" alt="menu" />
+  <img src="/img/{data.id}.webp" alt="" />
   <table>
     {#if loading}
       <p>Caricamento...</p>
