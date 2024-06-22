@@ -20,10 +20,10 @@
 
 </script>
 
-<main>
+<main style="background-color: {data.bgColor};">
   <h1>{data.title}</h1>
   <h3>{data.subtitle}</h3>
-  <img src={data.pic} alt="menu" />
+  <img src="/img/{data.id}.webp" alt="menu" />
   <table>
     {#if loading}
       <p>Caricamento...</p>
@@ -32,18 +32,12 @@
       <MenuRow {post} />
     {/each}
   </table>
-  <MenuFooter data={data.footer} />
+  <MenuFooter data={data} />
 </main>
 
 <style>
   main {
     text-align: center;
-    background-image: url(img/leaves.webp);
-    background-repeat: no-repeat;
-    background-position-y: -150px;
-    background-position-x: -200px;
-    min-height: 600px;
-    background-size: contain;
   }
   img {
     margin: 3rem auto;
