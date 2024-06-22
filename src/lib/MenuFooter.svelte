@@ -14,6 +14,6 @@
       <a href="mailto:?subject=informazioni" target="_blank">{data.email}</a>
     </p>
     <br>
-    <p>P.IVA e C.F. {data.vat}</p>
+    <p>P.IVA/C.F. {data.vat}</p>
   </div>
 </footer>
