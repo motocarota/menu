@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import MenuSpecialRow from '../../../lib/MenuSpecialRow.svelte'
+  import MenuRow from '../../../lib/MenuWineRow.svelte'
   import MenuFooter from '../../../lib/MenuFooter.svelte'
   
   /** @type {import('./$types').PageData} */
@@ -29,7 +29,7 @@
       <p>Caricamento...</p>
     {/if}
     {#each posts as post}
-      <MenuSpecialRow {post} />
+      <MenuRow {post} />
     {/each}
   </table>
   <MenuFooter data={data.footer} />
@@ -47,6 +47,7 @@
   }
   img {
     margin: 3rem auto;
+    max-height: 600px;
   }
   table {
     width: 90%;
