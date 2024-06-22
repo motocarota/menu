@@ -1,12 +1,17 @@
+import { error } from '@sveltejs/kit';
 import customers from '../../../customers.js'
 
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').PageServerLoad} */
 export function load({ params }) {
-
-	return {
-		...customers[params.menuId],
-		id: params.menuId,
-	};
+	const data = customers[params.menuId];
+	if (data) {
+		return {
+			...data,
+			id: params.menuId,
+		};
+	}
+	
+	error(404, 'Not found');
 }
 
 /** @type {import('./$types').EntryGenerator} */
