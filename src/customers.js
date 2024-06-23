@@ -35,7 +35,7 @@ const customers = {
 	'bagni-giovanni': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=0&single=true&output=tsv',
 		title: 'Bagni Giovanni',
-		subtitle: 'Bagni e Ristorante a Cavi Borgo',
+		subtitle: 'Menu Ristorante',
 		address: "Via Lungomare Cavi di Lavagna (GE)",
 		website: "www.bagnigiovanni.it",
 		email: "bagnigiovanni@pec.it",
@@ -43,7 +43,41 @@ const customers = {
 		vat: "01002240990",
 
 		// theme
-		pic: '/img/bagni-giovanni.webp',
+		pic: 'https://bagnigiovanni.it/images/logo.png',
+		bgColor: '#fdfdfd',
+		primaryColor: '#213f63',
+		secondaryColor: '#999999',
+		accentColor: '#296fae',
+	},
+	'bagni-giovanni-vini': {
+		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=2022557443&single=true&output=tsv',
+		title: 'Bagni Giovanni',
+		subtitle: 'Menu dei vini',
+		address: "Via Lungomare Cavi di Lavagna (GE)",
+		website: "www.bagnigiovanni.it",
+		email: "bagnigiovanni@pec.it",
+		phone: ["+39 0185 696948"],
+		vat: "01002240990",
+
+		// theme
+		pic: 'https://bagnigiovanni.it/images/logo.png',
+		bgColor: '#fdfdfd',
+		primaryColor: '#213f63',
+		secondaryColor: '#999999',
+		accentColor: '#296fae',
+	},
+	'bagni-giovanni-tavola-fredda': {
+		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=1620509354&single=true&output=tsv',
+		title: 'Bagni Giovanni',
+		subtitle: 'Menu tavola fredda',
+		address: "Via Lungomare Cavi di Lavagna (GE)",
+		website: "www.bagnigiovanni.it",
+		email: "bagnigiovanni@pec.it",
+		phone: ["+39 0185 696948"],
+		vat: "01002240990",
+
+		// theme
+		pic: 'https://bagnigiovanni.it/images/logo.png',
 		bgColor: '#fdfdfd',
 		primaryColor: '#213f63',
 		secondaryColor: '#999999',
