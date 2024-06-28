@@ -18,6 +18,8 @@ export function load({ params }) {
 export function entries() {
 	return [
 		{ menuId: 'bagni-giovanni' },
+		{ menuId: 'bagni-giovanni-vini' },
+		{ menuId: 'bagni-giovanni-bar' },
 		{ menuId: 'delfino-bianco-vini' },
 		{ menuId: 'delfino-bianco-special' },
 	];
