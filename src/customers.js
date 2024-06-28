@@ -66,7 +66,7 @@ const customers = {
 		secondaryColor: '#999999',
 		accentColor: '#296fae',
 	},
-	'bagni-giovanni-tavola-fredda': {
+	'bagni-giovanni-bar': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=1620509354&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu tavola fredda',
