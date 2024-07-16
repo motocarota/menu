@@ -26,7 +26,9 @@
 >
   <h1>{data.title}</h1>
   <h3>{data.subtitle}</h3>
-  <img src={data.pic} alt="logo" />
+  {#if data.pic}
+    <img src={data.pic} alt="logo" />
+  {/if}
   <table>
     {#if loading}
       <p>Caricamento...</p>
