@@ -19,6 +19,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>{data.title}</title>
+</svelte:head>
+
 <main
   style="background-color: {data.bgColor ??
     '#efefef'}; font-family: {data.fontFamily}; color: {data.primaryColor ??
