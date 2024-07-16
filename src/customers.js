@@ -3,7 +3,7 @@
 
 const customers = {
 	'delfino-bianco': {
-		website: "www.ristorantedelfinobianco.it",
+		website: "https://www.ristorantedelfinobianco.it",
 		email: "ristorantedelfinobianco@gmail.com",
 		phone: ["+39.0185.450.837", "328.1467737"],
 		vat: "02391980998",
@@ -18,7 +18,7 @@ const customers = {
 	},
 	'bagni-giovanni': {
 		address: "Via Lungomare Cavi di Lavagna (GE)",
-		website: "www.bagnigiovanni.it",
+		website: "https://www.bagnigiovanni.it",
 		email: "bagnigiovanni@pec.it",
 		phone: ["+39 0185 696948"],
 		vat: "01002240990",
@@ -76,11 +76,12 @@ const menus = {
 		subtitle: 'Menu special',
 		...customers['delfino-bianco'],
 	},
+
 	'bagni-giovanni': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=0&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu Ristorante',
-		...customers['delfino-bianco'],
+		...customers['bagni-giovanni'],
 	},
 	'bagni-giovanni-vini': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=2022557443&single=true&output=tsv',
@@ -94,12 +95,14 @@ const menus = {
 		subtitle: 'Menu tavola fredda',
 		...customers['bagni-giovanni'],
 	},
+
 	'pescou-vini': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnaA-01E4XuwdiXk1gdW7wGIVqokg7IfEAMkn_-TxohUtr_LjVvaAiCTU5zwnEfe2Rv1gHNWH7ymXQ/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Trattoria u Pescou',
 		subtitle: 'Ristorante di pesce',
 		...customers.pescou,
 	},
+	
 	'fieschi-vini': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThO3yYC0qBhvLAbrav7EUkzKOo2Q4WVHdGrPQ7MMJTqQRrPVLb5_ars-DFpHPpzEzyeREGCCFMyN1H/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Il Desco dei Fieschi',
