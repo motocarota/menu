@@ -36,6 +36,7 @@
   }
   table {
     width: 90%;
+    max-width: 990px;
     margin: 3rem auto;
     border-collapse: separate;
     border-spacing: 0 1em;
