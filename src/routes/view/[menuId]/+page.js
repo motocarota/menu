@@ -22,6 +22,8 @@ export function entries() {
 		{ menuId: 'bagni-giovanni-bar' },
 		{ menuId: 'delfino-bianco-vini' },
 		{ menuId: 'delfino-bianco-special' },
+		{ menuId: 'pescou-vini' },
+		{ menuId: 'fieschi-vini' },
 	];
 }
 
