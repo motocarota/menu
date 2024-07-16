@@ -5,15 +5,12 @@
 
 @layer base {
   .josefin-sans-db {
-    font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: italic;
   }
 
   * {
-    font-family: "Josefin Sans";
-    color: #3c4073;
     font-size: 18px;
   }
 
@@ -37,11 +34,20 @@
   h5 {
     font-size: 1.2rem;
   }
+  table {
+    width: 90%;
+    margin: 3rem auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+  }
   th {
     font-weight: 900;
   }
   td {
     text-align: left;
+  }
+  main {
+    text-align: center;
   }
   .price {
     min-width: 80px;
@@ -59,5 +65,9 @@
   }
   .no-print {
     display:none;
+  }
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
   }
 }
