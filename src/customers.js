@@ -97,7 +97,7 @@ const menus = {
 	},
 
 	'pescou-vini': {
-		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThO3yYC0qBhvLAbrav7EUkzKOo2Q4WVHdGrPQ7MMJTqQRrPVLb5_ars-DFpHPpzEzyeREGCCFMyN1H/pub?gid=2022557443&single=true&output=tsv',
+		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnaA-01E4XuwdiXk1gdW7wGIVqokg7IfEAMkn_-TxohUtr_LjVvaAiCTU5zwnEfe2Rv1gHNWH7ymXQ/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Trattoria u Pescou',
 		subtitle: 'Ristorante di pesce',
 		...customers.pescou,
