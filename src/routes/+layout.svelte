@@ -1,10 +1,9 @@
 <script>
-  import '../app.css';
-	import Footer from '../lib/Footer.svelte';
+  import "../app.css";
+  import Footer from "../lib/Footer.svelte";
 </script>
 
-
-<div style="min-height: calc(100vh - 420px);">
+<div id="root">
   <slot></slot>
 </div>
 <Footer />
