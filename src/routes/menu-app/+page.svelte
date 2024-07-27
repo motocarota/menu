@@ -57,9 +57,6 @@
       <li>Usare il proprio smartphone</li>
     </ul>
 
-    <h3 class="mt-5">Quanto costa:</h3>
-    <p>250 euro +IVA all'anno, niente sorprese</p>
-
     <h3 class="mt-5">Potrebbe Interessarti?</h3>
     <p>
       <a href="mailto:simone.poggi.83@gmail.com" target="_blank">
