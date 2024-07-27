@@ -1,9 +1,9 @@
 import { error } from '@sveltejs/kit';
-import customers from '../../../menus.js'
+import menus from '../../../menus.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export function load({ params }) {
-	const data = customers[params.menuId];
+	const data = menus[params.menuId];
 	if (data) {
 		return {
 			...data,
