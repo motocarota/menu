@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import customers from '../../../customers.js'
+import customers from '../../../menus.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export function load({ params }) {
