@@ -55,7 +55,7 @@ const base = {
 		pic: 'https://lirp.cdn-website.com/f70487f7/dms3rep/multi/opt/logo-il-desco-dei-fieschi-a3846b59-140h.png',
 		bgColor: '#cbe8f6',
 		primaryColor: '#19377c',
-		secondaryColor: '#333333',
+		secondaryColor: '#19377c',
 		accentColor: '#19377c',
 		fontFamily: 'Poppins,"Poppins Fallback"'
 	},
@@ -67,7 +67,7 @@ const base = {
 		vat: "01679860997",
 
 		// theme
-		pic: '',
+		pic: '/img/mb-logo.webp',
 		bgColor: '#fff',
 		primaryColor: '#727272',
 		secondaryColor: '#0d0a47',
@@ -123,7 +123,7 @@ const menus = {
 		...base.ddf,
 	},
 	'monna-bianca': {
-		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThO3yYC0qBhvLAbrav7EUkzKOo2Q4WVHdGrPQ7MMJTqQRrPVLb5_ars-DFpHPpzEzyeREGCCFMyN1H/pub?gid=2022557443&single=true&output=tsv',
+		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTng9_Z6d8gKYCT5UveLllMniToWVJnTBhnBmicDcXNM-yAlIWPQLiT5jOEgEAAt5bSPLOZz40OhvVX/pub?gid=1620509354&single=true&output=tsv',
 		title: 'Monna Bianca',
 		subtitle: "Enoteca d'autore",
 		...base.mb,
