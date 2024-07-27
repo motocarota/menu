@@ -28,8 +28,8 @@
     '#efefef'}; font-family: {data.fontFamily}; color: {data.primaryColor ??
     '#333'}"
 >
-  <h1 style="color: {data.accentColor ?? '#333'}">{data.title}</h1>
-  <h3 style="color: {data.secondaryColor ?? '#333'}">{data.subtitle}</h3>
+  <h1 style="color: {data.accentColor ?? '#333'}">{data.title ?? ""}</h1>
+  <h3 style="color: {data.secondaryColor ?? '#333'}">{data.subtitle ?? ""}</h3>
   {#if data.pic}
     <img src={data.pic} alt="logo" />
   {/if}
