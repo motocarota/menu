@@ -16,15 +16,9 @@ export function load({ params }) {
 
 /** @type {import('./$types').EntryGenerator} */
 export function entries() {
-	return [
-		{ menuId: 'bagni-giovanni' },
-		{ menuId: 'bagni-giovanni-vini' },
-		{ menuId: 'bagni-giovanni-bar' },
-		{ menuId: 'delfino-bianco-vini' },
-		{ menuId: 'delfino-bianco-special' },
-		{ menuId: 'pescou-vini' },
-		{ menuId: 'fieschi-vini' },
-	];
+	return Object.keys(menus).map(
+		menuId => ({ menuId })
+	)
 }
 
 export const prerender = true;
