@@ -81,12 +81,14 @@ const menus = {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=0&single=true&output=tsv',
 		title: 'Ristorante Delfino Bianco',
 		subtitle: 'Menu dei vini',
+		type: 'wine',
 		...base.db,
 	},
 	'delfino-bianco-special': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=0&single=true&output=tsv',
 		title: "Ristorante Delfino Bianco",
 		subtitle: 'Menu special',
+		type: 'food',
 		...base.db,
 	},
 
@@ -94,18 +96,21 @@ const menus = {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=0&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu Ristorante',
+		type: 'food',
 		...base.bg,
 	},
 	'bagni-giovanni-vini': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu dei vini',
+		type: 'wine',
 		...base.bg,
 	},
 	'bagni-giovanni-bar': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=1620509354&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu tavola fredda',
+		type: 'bar',
 		...base.bg,
 	},
 
@@ -113,6 +118,7 @@ const menus = {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnaA-01E4XuwdiXk1gdW7wGIVqokg7IfEAMkn_-TxohUtr_LjVvaAiCTU5zwnEfe2Rv1gHNWH7ymXQ/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Trattoria u Pescou',
 		subtitle: 'Ristorante di pesce',
+		type: 'wine',
 		...base.up,
 	},
 	
@@ -120,12 +126,14 @@ const menus = {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThO3yYC0qBhvLAbrav7EUkzKOo2Q4WVHdGrPQ7MMJTqQRrPVLb5_ars-DFpHPpzEzyeREGCCFMyN1H/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Il Desco dei Fieschi',
 		subtitle: 'Ristorante Pizzeria',
+		type: 'wine',
 		...base.ddf,
 	},
 	'monna-bianca': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTng9_Z6d8gKYCT5UveLllMniToWVJnTBhnBmicDcXNM-yAlIWPQLiT5jOEgEAAt5bSPLOZz40OhvVX/pub?gid=1620509354&single=true&output=tsv',
 		title: 'Monna Bianca',
 		subtitle: "Enoteca d'autore",
+		type: 'food',
 		...base.mb,
 	},
 };
