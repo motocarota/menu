@@ -25,7 +25,7 @@
       <MenuWineRow {data} {post} />
     {/if}
     {#if data.type === "bar"}
-      <MenuWineRow {data} {post} />
+      <MenuFoodRow {data} {post} />
     {/if}
   {/if}
 {/if}
