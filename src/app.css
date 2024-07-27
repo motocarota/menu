@@ -69,6 +69,65 @@
   }
 }
 
+.allerg {
+  background-image: url(/img/allerg.webp);
+  background-repeat: no-repeat;
+  background-size: 500%;
+}
+
+/* colonna 1 */
+.glutine {
+  background-position: 0px 0px;
+}
+.soia {
+  background-position: 0px -34px;
+}
+.solfiti {
+  background-position: 0px -66px;
+}
+
+/* colonna 2 */
+.crostacei {
+  background-position: -34px 0px;
+}
+.latte {
+  background-position: -34px -34px;
+}
+.sesamo {
+  background-position: -34px -66px;
+}
+
+/* colonna 3 */
+.uova {
+  background-position: -66px 0px;
+}
+.frutta_guscio {
+  background-position: -66px -34px;
+}
+.molluschi {
+  background-position: -66px -66px;
+}
+
+/* colonna 4 */
+.pesce {
+  background-position: -101px 0px;
+}
+.sedano {
+  background-position: -101px -34px;
+}
+.lupini {
+  background-position: -101px -66px;
+}
+
+/* colonna 5 */
+.arachidi {
+  background-position: -66px 0px;
+}
+.senape {
+  background-position: -66px -34px;
+}
+
+
 @media print{
   * {
     font-size: 14px;
