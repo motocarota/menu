@@ -1,27 +1,22 @@
 <script>
   export let post;
-  export let titleColor = "#333";
-  export let altColor = "#333";
-  const [color = "", name, notes, desc, price, qty = 0] = post ?? [];
+  export let data;
+  const accentColor = data.accentColor ?? "#333";
+  const altColor = data.secondaryColor ?? "#333";
 
-  const n = notes ? `(${notes}) ` : "";
+  const [color = "", name, notes, desc, price, _show = 0, _qty] = post ?? [];
 </script>
 
-{#if qty && qty > 0}
-  <tr>
-    {#if !price}
-      <th
-        colspan="5"
-        style="color: {altColor}"
-        class="pt-5 text-xl font-extrabold">{name}</th
-      >
-    {:else}
-      <td>
-        <div style="background: {color}" class="dot"></div>
-      </td>
-      <td><span style="color: {titleColor}" class="text-xl">{name}</span></td>
-      <td>{n} {desc}</td>
-      <td class="price">{price}</td>
-    {/if}
-  </tr>
-{/if}
+<div
+  class="flex flex-wrap lg:flex-nowrap justify-between mb-2 p-4 hover:bg-blend-darken"
+>
+  <div>
+    <div style="background: {color}" class="dot"></div>
+  </div>
+  <div class="flex-1 min-w-72">
+    <span style="color: {accentColor}" class="text-xl">{name}</span><br />
+    <span class="mr-6">{notes}</span>
+  </div>
+  <div class="mr-6">{desc}</div>
+  <div class="text-lg font-bold" style="color: {altColor}">{price}</div>
+</div>

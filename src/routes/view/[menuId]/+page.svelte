@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import MenuRow from "../../../lib/MenuWineRow.svelte";
+  import MenuRow from "../../../lib/MenuRow.svelte";
   import MenuFooter from "../../../lib/MenuFooter.svelte";
 
   /** @type {import('./$types').PageData} */
@@ -30,21 +30,19 @@
 >
   <h1 style="color: {data.accentColor ?? '#333'}">{data.title ?? ""}</h1>
   <h3 style="color: {data.secondaryColor ?? '#333'}">{data.subtitle ?? ""}</h3>
+
   {#if data.pic}
     <img src={data.pic} alt="logo" />
   {/if}
-  <table>
+  <div class="table">
     {#if loading}
-      <p>Caricamento...</p>
+      <p class="text-center">Caricamento...</p>
     {/if}
     {#each posts as post}
-      <MenuRow
-        {post}
-        titleColor={data.accentColor}
-        altColor={data.secondaryColor}
-      />
+      <MenuRow {post} {data} />
     {/each}
-  </table>
+  </div>
+
   <MenuFooter {data} />
 </main>
 

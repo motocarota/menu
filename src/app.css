@@ -34,18 +34,13 @@
   h5 {
     font-size: 1.2rem;
   }
-  table {
+  .table {
     width: 90%;
     max-width: 990px;
     margin: 3rem auto;
     border-collapse: separate;
     border-spacing: 0 1em;
-  }
-  th {
-    font-weight: 900;
-  }
-  td {
-    text-align: left;
+    text-align: start;
   }
   main {
     text-align: center;
