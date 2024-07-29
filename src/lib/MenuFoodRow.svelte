@@ -37,9 +37,11 @@
     <div style="background: {color}" class="dot"></div>
   </div>
   <div class="flex-1 min-w-72">
-    <span style="color: {accentColor}" class="text-xl">{name}</span>
+    <span style="color: {accentColor}" class="text-xl print:text-xs"
+      >{name}</span
+    >
     <br />
-    <span class="text-sm">{desc}</span>
+    <span class="text-sm print:text-xs">{desc}</span>
   </div>
   <div>
     {n}
@@ -47,5 +49,7 @@
   <div>
     <Allergeni list={allergeni} />
   </div>
-  <div class="text-lg font-bold" style="color: {altColor}">{price}</div>
+  <div class="text-lg print:text-sm font-bold" style="color: {altColor}">
+    {price}
+  </div>
 </div>

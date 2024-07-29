@@ -13,7 +13,7 @@
   {#if !price}
     <div
       style="color: {altColor}"
-      class="p-5 text-xl font-extrabold text-center"
+      class="p-5 print:p-0 print:pb-3 text-xl font-extrabold text-center"
     >
       {name}
     </div>

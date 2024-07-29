@@ -2,7 +2,7 @@
   export let data = {};
 </script>
 
-<footer class="bg-white text-slate-800 p pb-10">
+<footer class="bg-white text-slate-800 p pb-10 no-print">
   <div class="max-w-screen-lg mt-10 pt-10 mx-auto font-thin text-center">
     <p><a href={data.website} target="_blank">{data.website ?? ""}</a></p>
     <p>{data.address ?? ""}</p>

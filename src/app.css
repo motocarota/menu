@@ -121,17 +121,3 @@
 .senape {
   background-position: -66px -34px;
 }
-
-
-@media print{
-  * {
-    font-size: 14px;
-  }
-  .no-print {
-    display:none;
-  }
-  .pagebreak {
-    clear: both;
-    page-break-after: always;
-  }
-}

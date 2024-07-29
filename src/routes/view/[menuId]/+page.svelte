@@ -27,13 +27,20 @@
   style="background-color: {data.bgColor ??
     '#efefef'}; font-family: {data.fontFamily}; color: {data.primaryColor ??
     '#333'}"
+  class="print:text-xs"
 >
-  <h1 style="color: {data.accentColor ?? '#333'}">{data.title ?? ""}</h1>
-  <h3 style="color: {data.secondaryColor ?? '#333'}">{data.subtitle ?? ""}</h3>
+  <div class="no-print">
+    <h1 style="color: {data.accentColor ?? '#333'}">
+      {data.title ?? ""}
+    </h1>
+    <h3 style="color: {data.secondaryColor ?? '#333'}">
+      {data.subtitle ?? ""}
+    </h3>
 
-  {#if data.pic}
-    <img src={data.pic} alt="logo" />
-  {/if}
+    {#if data.pic}
+      <img src={data.pic} alt="logo" />
+    {/if}
+  </div>
   <div class="table">
     {#if loading}
       <p class="text-center">Caricamento...</p>

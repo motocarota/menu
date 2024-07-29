@@ -1,0 +1,70 @@
+
+@media print {
+  .no-print {
+    display:none;
+  }
+
+  .page-break {
+    clear: both;
+    page-break-after: always;
+  }
+
+  .josefin-sans-db {
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  * {
+    font-size: 10px;
+  }
+
+  li {
+    font-weight: 200;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 11px;
+  }
+  .table {
+    width: 90%;
+    max-width: 990px;
+    margin: 3rem auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    text-align: start;
+  }
+  main {
+    text-align: center;
+  }
+  .price {
+    min-width: 80px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  body {
+    min-height: 100vh;
+    background: url(/img/bg.webp);
+  }
+}
