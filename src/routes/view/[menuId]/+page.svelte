@@ -27,7 +27,7 @@
   style="background-color: {data.bgColor ??
     '#efefef'}; font-family: {data.fontFamily}; color: {data.primaryColor ??
     '#333'}"
-  class="print:text-xs"
+  class="print:text-md"
 >
   <div class="no-print">
     <h1 style="color: {data.accentColor ?? '#333'}">
@@ -41,7 +41,7 @@
       <img src={data.pic} alt="logo" />
     {/if}
   </div>
-  <div class="table">
+  <div>
     {#if loading}
       <p class="text-center">Caricamento...</p>
     {/if}

@@ -37,11 +37,11 @@
     <div style="background: {color}" class="dot"></div>
   </div>
   <div class="flex-1 min-w-72">
-    <span style="color: {accentColor}" class="text-xl print:text-xs"
+    <span style="color: {accentColor}" class="text-xl print:text-sm"
       >{name}</span
     >
     <br />
-    <span class="text-sm print:text-xs">{desc}</span>
+    <span class="text-sm print:text-sm">{desc}</span>
   </div>
   <div>
     {n}

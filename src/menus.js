@@ -42,7 +42,7 @@ const base = {
 		primaryColor: '#898989',
 		secondaryColor: '#3b5577',
 		accentColor: '#3b5577',
-		fontFamily: 'Red Hat Display,sans-serif'
+		fontFamily: 'Quicksand'
 	},
 	ddf: {
 		address: "Piazza della Libertà 42, 16033 Lavagna GE",

@@ -14,13 +14,18 @@
     <div style="background: {color}" class="dot"></div>
   </div>
   <div class="flex-1 lg:min-w-72">
-    <span style="color: {accentColor}" class="text-xl print:text-xs"
-      >{name}</span
-    ><br />
-    <span class="mr-6 print:text-xs">{notes}</span>
+    <div class="flex justify-center">
+      <div style="color: {accentColor}" class="text-xl print:text-md">
+        {name}
+      </div>
+      {#if desc}
+        <div class="text-xl print:text-md ml-1">- {desc}</div>
+      {/if}
+    </div>
+
+    <span class="mr-6 print:text-md">{notes}</span>
   </div>
-  <div class="mr-6 print:text-xs">{desc}</div>
-  <div class="text-lg print:text-sm font-bold" style="color: {altColor}">
+  <div class="text-lg print:text-md font-bold" style="color: {altColor}">
     {price}
   </div>
 </div>
