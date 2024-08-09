@@ -81,12 +81,13 @@ export const clients = {
 	}
 }
 
-const menus = {
+export const menus = {
 	'delfino-bianco-vini': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=0&single=true&output=tsv',
 		title: 'Ristorante Delfino Bianco',
 		subtitle: 'Menu dei vini',
 		type: 'wine',
+		clientId: 'db',
 		...clients.db,
 	},
 	'delfino-bianco-special': {
@@ -94,6 +95,7 @@ const menus = {
 		title: "Ristorante Delfino Bianco",
 		subtitle: 'Menu special',
 		type: 'food',
+		clientId: 'db',
 		...clients.db,
 	},
 
@@ -102,6 +104,7 @@ const menus = {
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu Ristorante',
 		type: 'food',
+		clientId: 'bg',
 		...clients.bg,
 	},
 	'bagni-giovanni-vini': {
@@ -109,6 +112,7 @@ const menus = {
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu dei vini',
 		type: 'wine',
+		clientId: 'bg',
 		...clients.bg,
 	},
 	'bagni-giovanni-bar': {
@@ -116,6 +120,7 @@ const menus = {
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu tavola fredda',
 		type: 'bar',
+		clientId: 'bg',
 		...clients.bg,
 	},
 
@@ -124,6 +129,7 @@ const menus = {
 		title: 'Trattoria u Pescou',
 		subtitle: 'Ristorante di pesce',
 		type: 'wine',
+		clientId: 'up',
 		...clients.up,
 	},
 	
@@ -132,6 +138,7 @@ const menus = {
 		title: 'Il Desco dei Fieschi',
 		subtitle: 'Ristorante Pizzeria',
 		type: 'wine',
+		clientId: 'ddf',
 		...clients.ddf,
 	},
 	'monna-bianca-bar': {
@@ -139,6 +146,7 @@ const menus = {
 		title: 'Monna Bianca',
 		subtitle: "Enoteca d'autore",
 		type: 'food',
+		clientId: 'mb',
 		...clients.mb,
 	},
 	'monna-bianca-vini-calice': {
@@ -146,8 +154,7 @@ const menus = {
 		title: 'Monna Bianca',
 		subtitle: "Vini al Calice",
 		type: 'wine',
+		clientId: 'mb',
 		...clients.mb,
 	},
 };
-
-export default menus

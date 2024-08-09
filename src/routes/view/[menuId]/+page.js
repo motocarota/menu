@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import menus from '../../../menus.js'
+import {menus} from '../../../menus.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export function load({ params }) {
