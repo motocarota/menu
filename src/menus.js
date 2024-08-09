@@ -1,6 +1,7 @@
 
-const base = {
+export const clients = {
 	db: {
+		name: "Delfino Bianco",
 		website: "https://www.ristorantedelfinobianco.it",
 		email: "ristorantedelfinobianco@gmail.com",
 		phone: ["+39.0185.450.837", "328.1467737"],
@@ -15,6 +16,7 @@ const base = {
 		fontFamily: '"Josefin Sans", sans-serif',
 	},
 	bg: {
+		name: "Bagni Giovanni",
 		address: "Via Lungomare Cavi di Lavagna (GE)",
 		website: "https://www.bagnigiovanni.it",
 		email: "bagnigiovanni@pec.it",
@@ -30,6 +32,7 @@ const base = {
 		fontFamily: "Helvetica,Arial,sans-serif",
 	},
 	up: {
+		name: "U Pescou",
 		address: "Via Dante Alighieri, 70, 16033 Lavagna GE",
 		website: "",
 		email: "",
@@ -45,6 +48,7 @@ const base = {
 		fontFamily: 'Quicksand'
 	},
 	ddf: {
+		name: "Desco dei Fieschi",
 		address: "Piazza della Libertà 42, 16033 Lavagna GE",
 		website: "https://www.ildescodeifieschi.it/",
 		email: "",
@@ -60,6 +64,7 @@ const base = {
 		fontFamily: 'Poppins,"Poppins Fallback"'
 	},
 	mb: {
+		name: "Monna Bianca",
 		address: "Via Dante 56, 16033 Lavagna GE",
 		website: "https://www.monnabianca.it/",
 		email: "info@monnabianca.it",
@@ -82,14 +87,14 @@ const menus = {
 		title: 'Ristorante Delfino Bianco',
 		subtitle: 'Menu dei vini',
 		type: 'wine',
-		...base.db,
+		...clients.db,
 	},
 	'delfino-bianco-special': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=0&single=true&output=tsv',
 		title: "Ristorante Delfino Bianco",
 		subtitle: 'Menu special',
 		type: 'food',
-		...base.db,
+		...clients.db,
 	},
 
 	'bagni-giovanni': {
@@ -97,21 +102,21 @@ const menus = {
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu Ristorante',
 		type: 'food',
-		...base.bg,
+		...clients.bg,
 	},
 	'bagni-giovanni-vini': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=2022557443&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu dei vini',
 		type: 'wine',
-		...base.bg,
+		...clients.bg,
 	},
 	'bagni-giovanni-bar': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS8qhCOv9jDeoTc9afdaTMEvCh9yXXFjVRg855B9WSmr7jrgQipflrQ0cD3Q87bLQ5QvpsWaekF0Nyl/pub?gid=1620509354&single=true&output=tsv',
 		title: 'Bagni Giovanni',
 		subtitle: 'Menu tavola fredda',
 		type: 'bar',
-		...base.bg,
+		...clients.bg,
 	},
 
 	'pescou-vini': {
@@ -119,7 +124,7 @@ const menus = {
 		title: 'Trattoria u Pescou',
 		subtitle: 'Ristorante di pesce',
 		type: 'wine',
-		...base.up,
+		...clients.up,
 	},
 	
 	'fieschi-vini': {
@@ -127,14 +132,21 @@ const menus = {
 		title: 'Il Desco dei Fieschi',
 		subtitle: 'Ristorante Pizzeria',
 		type: 'wine',
-		...base.ddf,
+		...clients.ddf,
 	},
-	'monna-bianca': {
+	'monna-bianca-bar': {
 		url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTng9_Z6d8gKYCT5UveLllMniToWVJnTBhnBmicDcXNM-yAlIWPQLiT5jOEgEAAt5bSPLOZz40OhvVX/pub?gid=1620509354&single=true&output=tsv',
 		title: 'Monna Bianca',
 		subtitle: "Enoteca d'autore",
 		type: 'food',
-		...base.mb,
+		...clients.mb,
+	},
+	'monna-bianca-vini-calice': {
+		url: 'https://docs.google.com/spreadsheets/d/1Jw6cX95i_jPAR6FRgSsv18fS5wrkkgGiH6tbw5B_NmE/pub?gid=1795915050&single=true&output=tsv',
+		title: 'Monna Bianca',
+		subtitle: "Vini al Calice",
+		type: 'wine',
+		...clients.mb,
 	},
 };
 
