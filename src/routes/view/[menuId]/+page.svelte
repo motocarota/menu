@@ -41,7 +41,7 @@
       <img src={data.pic} alt="logo" />
     {/if}
   </div>
-  <div>
+  <div class="max-w-5xl mx-auto">
     {#if loading}
       <p class="text-center">Caricamento...</p>
     {/if}
