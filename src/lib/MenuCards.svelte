@@ -5,7 +5,7 @@
 
 <div class="flex justify-center gap-5 flex-wrap px-4">
   {#each menus as menu}
-    <Card img={menu.pic} href={`/view/${menu.id}`}>
+    <Card img={menu.menupic ?? menu.pic} href={`/view/${menu.id}`}>
       <h5 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
         {menu.subtitle}
       </h5>

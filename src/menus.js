@@ -147,6 +147,7 @@ export const menus = {
 		subtitle: "Enoteca d'autore",
 		type: 'food',
 		clientId: 'mb',
+		menupic: '/img/ape.webp',
 		...clients.mb,
 	},
 	'monna-bianca-vini-calice': {
@@ -155,6 +156,7 @@ export const menus = {
 		subtitle: "Vini al Calice",
 		type: 'wine',
 		clientId: 'mb',
+		menupic: '/img/calice.webp',
 		...clients.mb,
 	},
 };
